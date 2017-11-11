@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;  
+    background:red url(../img/wall.jpg) no-repeat center center; 
+    background-size: cover;
+}
+kbd{
+    border: 1px red solid;
+    width:4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase; 
+    position: relative;
+}
+kbd > button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+kbd:hover >button{
+    display: block;
+}
+main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.row:nth-child(2){
+    margin-left: -10px;
+}
+.row:nth-child(3){
+    margin-left: -100px;
+}
+#wraper{
+    display: inline-block;
+    background: rgba(255,255, 255, 0.4);
+    border-radius: 10px;
+}
+.key{
+    width:50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    border:1px solid #3A3A3A;
+    border-radius: 7px;
+    color: #D0D0D0;
+    box-shadow: 0 0 0 1px #1A1B1C,0 0 0 2px #1F2020,0 3px 0 2px #080808 ;
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+    margin:0 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.key img{
+    width:14px;
+    height: 14px;
+    position: absolute;
+    left: 4px;
+    bottom:2px;
+}
+.key .text{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+.row{
+    margin:20px;
+}
